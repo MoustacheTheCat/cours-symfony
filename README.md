@@ -1,5 +1,6 @@
 ## Cours symfony
 
+-----------------------------------------------------step 1
 
 Create projet :
 
@@ -7,8 +8,10 @@ Create projet :
         
 Init git :         
         
-        git init 
-        git remote add origin git@github.com:MoustacheTheCat/cours-symfony.git
+        git init && \
+        git remote add origin git@github.com:MoustacheTheCat/cours-symfony.git && \
+        git add . && \
+        git commit -m "init" && \
         git push -u origin main
 
 Lancer le serveur :
@@ -23,19 +26,22 @@ Crée un controller :
 
         symfony console make:controller
 
-renseigner ensuite le nom du controller
+-----------------------------------------------------step 2
+
+
+
+--------------renseigner ensuite le nom du controller 
 
 
 Installer les packages :
 
-Console de debug:
+-Console de debug:
 
         composer require symfony/profiler-pack 
     
-Crée les controller:
+-Crée les controller:
 
         composer require symfony/maker-bundle --dev
-
-Enabling TLS:
+-Enabling TLS:
 
         symfony server:ca:install
