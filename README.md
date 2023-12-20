@@ -1,14 +1,15 @@
 ## Cours symfony
 
 
-create projet 
+create projet :
 
         /usr/local/bin/composer create-project symfony/skeleton /home/moustache/Documents/symfony/amazone  --no-interaction
+        
+init git :         
+        
         git init 
         git remote add origin git@github.com:MoustacheTheCat/cours-symfony.git
         git push -u origin main
-        
-        
 
 lancer le serveur :
 
