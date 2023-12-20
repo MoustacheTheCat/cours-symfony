@@ -2,6 +2,7 @@
 
 
 create projet 
+
         /usr/local/bin/composer create-project symfony/skeleton /home/moustache/Documents/symfony/amazone  --no-interaction
         git init 
         git remote add origin git@github.com:MoustacheTheCat/cours-symfony.git
@@ -20,6 +21,8 @@ stoper le serveur :
 crée un controller :
 
         symfony console make:controller
+
+        >"nom du controller"
 
 
 installer les packages :
