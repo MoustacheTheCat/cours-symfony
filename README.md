@@ -26,22 +26,65 @@ Crée un controller :
 
         symfony console make:controller
 
------------------------------------------------------step 2
-
-
-
 --------------renseigner ensuite le nom du controller 
 
+Crée la db :
 
-Installer les packages :
+        symfony console doctrine:database:create
 
--Console de debug:
+Crée une Entity :
+
+        symfony console make:entity
+
+Crée la tabledb :
+
+        symfony console doctrine:schema:update
+
+        --dump-sql
+
+        --force
+
+Crée une fixture : 
+
+        symfony console make:fixtures <nom de la fixture>
+
+envoyer les données en DB
+
+        symfony console doctrine:fixtures:load
+
+envoyer les données en DB sans purge 
+
+        symfony console doctrine:fixtures:load --append
+
+
+
+
+
+
+----------------------------------------------------------Installer les packages
+
+Enabling TLS:
+
+      symfony server:ca:install
+
+
+Console de debug:
 
         composer require symfony/profiler-pack 
     
--Crée les controller:
+Crée les controller:
 
         composer require symfony/maker-bundle --dev
--Enabling TLS:
 
-        symfony server:ca:install
+ORM 
+
+        composer require symfony/orm-pack
+
+-->editer le fichier .env
+
+-> DATABASE_URL="mysql://<userdbname>:<password>@127.0.0.1:3306/<dbname>?serverVersion=10.11.2-MariaDB&charset=utf8mb4"
+
+
+-ORM FIXTURE
+
+        composer require --dev orm-fixtures
